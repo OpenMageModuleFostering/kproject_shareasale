@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <kproject translate="label" module="kproject_sas">
+            <label>KProject</label>
+            <sort_order>200</sort_order>
+        </kproject>
+    </tabs>
+    <sections>
+        <kproject_sas translate="label" module="kproject_sas">
+            <label>ShareASale</label>
+            <tab>kproject</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <merchant_id translate="label">
+                            <label>Merchant ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Your ShareASale merchant ID number</comment>
+                        </merchant_id>
+                    </fields>
+                </general>
+                <api translate="label">
+                    <label>API (General)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[ Allows new transaction recording as well as full & partial refunds ]]></comment>
+                    <expanded>1</expanded>
+                    <fields>
+                        <token translate="label">
+                            <label>Token</label>
+                            <frontend_type>obscure</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Found listed at Tools >> Merchant API</comment>
+                        </token>
+                        <secret_key translate="label">
+                            <label>Secret Key</label>
+                            <frontend_type>obscure</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Found listed at Tools >> Merchant API</comment>
+                        </secret_key>
+                    </fields>
+                </api>
+                <api_new translate="label">
+                    <label>API (New Transactions)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>This is for special case usage to integrate with 3rd party plugins.
+                        Please consult ShareASale if you feel like you need this feature.</comment>
+                    <expanded>0</expanded>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Recommended to keep this at No as you will need ShareASale to enable this</comment>
+                            <tooltip>Enables 3rd party plugins to make ShareASale new transaction API calls</tooltip>
+                        </enabled>
+                        <affiliate_key translate="label">
+                            <label>Affiliate ID key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This custom key will need to be requested from ShareASale</comment>
+                        </affiliate_key>
+                        <click_key translate="label">
+                            <label>Click-through ID key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>This custom key will need to be requested from ShareASale</comment>
+                        </click_key>
+                    </fields>
+                </api_new>
+            </groups>
+        </kproject_sas>
+    </sections>
+</config>

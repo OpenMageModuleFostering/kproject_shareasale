@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>KProject_ShareASale</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/licenses/">GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This **unofficial** ShareASale Magento plugin is designed to provide a communication link between Magento and ShareASale affiliate API.</summary>
+    <description>As before, the new transaction recorder is the small image pixel code printed on the order success page. In addition to simplifying the integration process of ShareASale, the main reason for this project is to help with refunds/voiding of transactions using Magento observers. Moreover, the module also allows external plugins to call ShareASale New Transaction API when importing orders.</description>
+    <notes>The initial release version with minimum production test time.</notes>
+    <authors><author><name>Konstantin Kiritsenko</name><user>KProjectPro</user><email>support@kproject.pro</email></author></authors>
+    <date>2016-09-12</date>
+    <time>02:26:36</time>
+    <contents><target name="magecommunity"><dir name="KProject"><dir name="ShareASale"><dir name="Block"><file name="Pixel.php" hash="f09b41c293b2ef169aecca6c1fd26f38"/></dir><dir name="Helper"><file name="Customer.php" hash="37f47b7991c362fa8d4b7627ae2dd58f"/><file name="Data.php" hash="1595213351b5a9bfce9ea082aca480f5"/><file name="Pixel.php" hash="f00d63b35d332c1f38b6853441b634e6"/><file name="Product.php" hash="2e3c2680472d9bb0dc41708651ab7383"/><file name="Status.php" hash="4be217156acd84fc30fa54cfb579769a"/><file name="Transaction.php" hash="42e3c8665d255452efcca9fa8dc7fa82"/></dir><dir name="Model"><file name="Cron.php" hash="1da6b0f9dfb3c5d1a5ac0f1ce5e49527"/><dir name="Mysql4"><dir name="Orders"><file name="Collection.php" hash="b0d1c3ceabe42a5244540f7ab4983dba"/></dir><file name="Orders.php" hash="052729f4247f8f78bc1deef666f9a893"/></dir><file name="Observer.php" hash="eab4e6e431a442953b5dc5b2a6bc63ac"/><file name="Orders.php" hash="c6eed5bd9281c3a1c8cb1b2af5f2691e"/><file name="Session.php" hash="293df8c098782e49ab241f0e45c9f616"/></dir><dir name="etc"><file name="adminhtml.xml" hash="0e7ff0f0bd8b5a7c0f272f9de76a7e90"/><file name="config.xml" hash="8612d42bdfaaedd55fe4586c9ef43ac9"/><file name="system.xml" hash="e7ee62806f4642c662762b9f771e71eb"/></dir><dir name="sql"><dir name="kproject_sas_setup"><file name="mysql4-install-1.0.0.php" hash="3096cc709c1e48006a42d348a60c1753"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="kproject"><dir name="sas"><file name="checkout.xml" hash="7059064fc329f3551e17b59f341b82bc"/></dir></dir></dir><dir name="template"><dir name="kproject"><dir name="sas"><file name="pixel.phtml" hash="283d77b2d847e4293e84e7c177123952"/></dir></dir></dir></dir></dir></dir></target><target name="magelib"><dir name="KProject"><dir name="ShareASale"><file name="Api.php" hash="d9d991a9365897d3442d0b65bbdef6d5"/><file name="Credentials.php" hash="ce6de41de84e3d2384d59418bf6ecd21"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="KProject_ShareASale.xml" hash="bb2b64daa3fda44aec9d71855ab084de"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>5.6.0</max></php></required></dependencies>
+</package>
