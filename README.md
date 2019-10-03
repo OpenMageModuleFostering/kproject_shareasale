@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 This **unofficial** ShareASale Magento plugin is designed to provide a communication link between Magento and ShareASale affiliate API.
